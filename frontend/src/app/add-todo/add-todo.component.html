@@ -1,0 +1,7 @@
+
+<app-header/>
+<form (submit)="onSubmit(title.value, body.value)" class="add-todo">
+  <input #title class="title" type="text">
+  <input #body class="content" type="text">
+  <button type="submit" class="btn-info">add</button>
+</form>

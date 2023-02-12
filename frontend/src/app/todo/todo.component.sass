@@ -1,0 +1,64 @@
+.todos
+      list-style: none
+
+      .todo
+          position: relative
+          margin-top: 30px
+          height: 120px
+          margin-left: 50%
+          transform: translate(-50%, -5px)
+          border: 2px solid #3498db
+          border-radius: 12px
+          text-align: center
+          color: #3498db
+          transition: .3s all
+          background: rgba(162,180,185,0.5)
+          &:hover
+            margin-top: 29.9px
+            box-shadow: #3498db 1.5px 1px 1px 1px
+
+
+          .todo__title
+           position: absolute
+           text-transform: uppercase
+           border-bottom: 1px dashed  opacify(#3498db, .3)
+           text-align: center
+           padding-bottom: 10px
+           width: 100%
+           vertical-align: center
+
+
+          p
+            margin-top: 10px
+
+
+          .todo__description
+            position: absolute
+            width: 100%
+            vertical-align: center
+            padding-top: 10%
+            margin-bottom: 10px
+          .btn
+            position: absolute
+            width: 70px
+            height: 30px
+            padding: 5px 15px
+            background: none
+            border: 1px solid #3498db
+            border-radius: 0  0 10px 0
+            text-decoration: none
+            color: #3498db
+            top: 75%
+            right: 0
+            transition: all .3s
+            &:hover
+              background:  opacify(#3498db, .6)
+              color:  opacify(white, .4)
+              text-shadow: white 2px 2px 1px 5px
+          .check
+            width: 30px
+            height: 30px
+            left: 0
+            bottom: 0
+            position: absolute
+            overflow-y: hidden

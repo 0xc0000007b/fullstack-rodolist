@@ -1,0 +1,10 @@
+ <ul class="todos" [@del]="deletion">
+      <li class="todo" >
+        <p class="todo__title">
+          {{ todo.name }}
+        </p>
+        <p class="todo__description">{{ todo.content }}</p>
+        <mat-checkbox class="check"></mat-checkbox>
+        <button class="btn" (click)="deleteTodo(todo.id)">delete </button>
+      </li>
+ </ul>
